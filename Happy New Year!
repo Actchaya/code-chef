@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int X = sc.nextInt();   // current hour
+        int hoursLeft = 24 - X; // hours remaining until midnight
+
+        System.out.println(hoursLeft);
+
+        sc.close();
+    }
+}
