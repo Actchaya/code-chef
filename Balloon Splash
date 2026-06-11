@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int X = sc.nextInt();  // Alice's balloons
+        int Y = sc.nextInt();  // Bob's balloons
+
+        if (X > Y) {
+            System.out.println("Alice");
+        } else if (Y > X) {
+            System.out.println("Bob");
+        } else {
+            System.out.println("Draw");
+        }
+    }
+}
