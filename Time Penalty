@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+Scanner scanner=new Scanner(System.in);
+   //Read the two space-separed integers X and Y
+    int X=scanner.nextInt();
+    int Y=scanner.nextInt();
+    
+    //Calculate the total time total Penalty
+    int totalPenalty = X + (Y*10);
+    
+    //Output thee result
+    System.out.println(totalPenalty);
+    
+    //close the scanner
+    scanner.close();
+    }
+}
