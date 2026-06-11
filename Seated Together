@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int X = sc.nextInt();  // Chef's seat number
+        int chefinaSeat = X + 1;
+
+        // Each row has 5 seats. If X is divisible by 5, then Chef is at the last seat of a row.
+        // In that case, Chefina's seat will be in the next row.
+        if (X % 5 == 0) {
+            System.out.println("No");
+        } else {
+            System.out.println("Yes");
+        }
+    }
+}
