@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int A = sc.nextInt();  // length of rectangle
+        int B = sc.nextInt();  // breadth of rectangle
+        int C = sc.nextInt();  // side of square
+
+        int rectangleArea = A * B;
+        int squareArea = C * C;
+
+        if (rectangleArea == squareArea) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+    }
+}
