@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int N = sc.nextInt(); // Total rupees Chef had
+        int A = sc.nextInt(); // Number of ice creams
+        int B = sc.nextInt(); // Cost per ice cream
+
+        int spent = A * B;        // Total money spent
+        int remaining = N - spent; // Money left
+
+        System.out.println(remaining);
+
+        sc.close();
+    }
+}
