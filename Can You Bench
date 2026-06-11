@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int X = sc.nextInt();  // Weight in the 1st set
+
+        // Each subsequent set increases by 10 kg
+        int thirdSet = X + 20;  // 2 increments of 10 → 20 added
+
+        System.out.println(thirdSet);
+
+        sc.close();
+    }
+}
