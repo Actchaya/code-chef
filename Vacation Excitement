@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int X = sc.nextInt();  // vacation date in March
+        int Y = sc.nextInt();  // excitement level on March 1
+
+        // Excitement increases by (X - 1) from March 1 to March X
+        int excitement = Y + (X - 1);
+
+        System.out.println(excitement);
+    }
+}
