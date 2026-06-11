@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int A = sc.nextInt();  // First dice roll
+
+        // To win, the sum of two dice must be 7
+        int requiredSecondRoll = 7 - A;
+
+        System.out.println(requiredSecondRoll);
+    }
+}
